@@ -21,6 +21,10 @@
 		99B9786917FA054700C5FE86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784B17FA054700C5FE86 /* UIKit.framework */; };
 		99B9787117FA054700C5FE86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99B9786F17FA054700C5FE86 /* InfoPlist.strings */; };
 		99B9787317FA054700C5FE86 /* Wheres_MileyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9787217FA054700C5FE86 /* Wheres_MileyTests.m */; };
+		99B9788A17FA09C400C5FE86 /* CSE494LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9788917FA09C400C5FE86 /* CSE494LevelViewController.m */; };
+		99B9788D17FA0BD000C5FE86 /* CSE494RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9788C17FA0BD000C5FE86 /* CSE494RulesViewController.m */; };
+		99B9788F17FA0FBD00C5FE86 /* Miley_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B9788E17FA0FBD00C5FE86 /* Miley_11.jpg */; };
+		99B9789217FA10CA00C5FE86 /* CSE494LandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9789117FA10CA00C5FE86 /* CSE494LandscapeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		99B9786E17FA054700C5FE86 /* Wheres_MileyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wheres_MileyTests-Info.plist"; sourceTree = "<group>"; };
 		99B9787017FA054700C5FE86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99B9787217FA054700C5FE86 /* Wheres_MileyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wheres_MileyTests.m; sourceTree = "<group>"; };
+		99B9788817FA09C400C5FE86 /* CSE494LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494LevelViewController.h; sourceTree = "<group>"; };
+		99B9788917FA09C400C5FE86 /* CSE494LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494LevelViewController.m; sourceTree = "<group>"; };
+		99B9788B17FA0BD000C5FE86 /* CSE494RulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494RulesViewController.h; sourceTree = "<group>"; };
+		99B9788C17FA0BD000C5FE86 /* CSE494RulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494RulesViewController.m; sourceTree = "<group>"; };
+		99B9788E17FA0FBD00C5FE86 /* Miley_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Miley_11.jpg; sourceTree = "<group>"; };
+		99B9789017FA10CA00C5FE86 /* CSE494LandscapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494LandscapeViewController.h; sourceTree = "<group>"; };
+		99B9789117FA10CA00C5FE86 /* CSE494LandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494LandscapeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +123,15 @@
 		99B9784D17FA054700C5FE86 /* Wheres_Miley */ = {
 			isa = PBXGroup;
 			children = (
+				99B9785917FA054700C5FE86 /* Main.storyboard */,
+				99B9788817FA09C400C5FE86 /* CSE494LevelViewController.h */,
+				99B9788B17FA0BD000C5FE86 /* CSE494RulesViewController.h */,
+				99B9788C17FA0BD000C5FE86 /* CSE494RulesViewController.m */,
+				99B9789017FA10CA00C5FE86 /* CSE494LandscapeViewController.h */,
+				99B9789117FA10CA00C5FE86 /* CSE494LandscapeViewController.m */,
+				99B9788917FA09C400C5FE86 /* CSE494LevelViewController.m */,
 				99B9785617FA054700C5FE86 /* CSE494AppDelegate.h */,
 				99B9785717FA054700C5FE86 /* CSE494AppDelegate.m */,
-				99B9785917FA054700C5FE86 /* Main.storyboard */,
 				99B9785C17FA054700C5FE86 /* CSE494ViewController.h */,
 				99B9785D17FA054700C5FE86 /* CSE494ViewController.m */,
 				99B9785F17FA054700C5FE86 /* Images.xcassets */,
@@ -126,6 +143,7 @@
 		99B9784E17FA054700C5FE86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				99B9788E17FA0FBD00C5FE86 /* Miley_11.jpg */,
 				99B9784F17FA054700C5FE86 /* Wheres_Miley-Info.plist */,
 				99B9785017FA054700C5FE86 /* InfoPlist.strings */,
 				99B9785317FA054700C5FE86 /* main.m */,
@@ -229,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B9788F17FA0FBD00C5FE86 /* Miley_11.jpg in Resources */,
 				99B9786017FA054700C5FE86 /* Images.xcassets in Resources */,
 				99B9785217FA054700C5FE86 /* InfoPlist.strings in Resources */,
 				99B9785B17FA054700C5FE86 /* Main.storyboard in Resources */,
@@ -251,8 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B9785E17FA054700C5FE86 /* CSE494ViewController.m in Sources */,
+				99B9788A17FA09C400C5FE86 /* CSE494LevelViewController.m in Sources */,
 				99B9785817FA054700C5FE86 /* CSE494AppDelegate.m in Sources */,
 				99B9785417FA054700C5FE86 /* main.m in Sources */,
+				99B9789217FA10CA00C5FE86 /* CSE494LandscapeViewController.m in Sources */,
+				99B9788D17FA0BD000C5FE86 /* CSE494RulesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +483,7 @@
 				99B9787817FA054700C5FE86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99B9787917FA054700C5FE86 /* Build configuration list for PBXNativeTarget "Wheres_MileyTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +492,7 @@
 				99B9787B17FA054700C5FE86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
