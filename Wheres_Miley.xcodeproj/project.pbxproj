@@ -19,8 +19,6 @@
 		99B9786717FA054700C5FE86 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9786617FA054700C5FE86 /* XCTest.framework */; };
 		99B9786817FA054700C5FE86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784717FA054700C5FE86 /* Foundation.framework */; };
 		99B9786917FA054700C5FE86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784B17FA054700C5FE86 /* UIKit.framework */; };
-		99B9787117FA054700C5FE86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99B9786F17FA054700C5FE86 /* InfoPlist.strings */; };
-		99B9787317FA054700C5FE86 /* Wheres_MileyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9787217FA054700C5FE86 /* Wheres_MileyTests.m */; };
 		99B9788A17FA09C400C5FE86 /* CSE494LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9788917FA09C400C5FE86 /* CSE494LevelViewController.m */; };
 		99B9788D17FA0BD000C5FE86 /* CSE494RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9788C17FA0BD000C5FE86 /* CSE494RulesViewController.m */; };
 		99B9788F17FA0FBD00C5FE86 /* Miley_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B9788E17FA0FBD00C5FE86 /* Miley_11.jpg */; };
@@ -54,9 +52,6 @@
 		99B9785F17FA054700C5FE86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99B9786517FA054700C5FE86 /* Wheres_MileyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wheres_MileyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B9786617FA054700C5FE86 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		99B9786E17FA054700C5FE86 /* Wheres_MileyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wheres_MileyTests-Info.plist"; sourceTree = "<group>"; };
-		99B9787017FA054700C5FE86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		99B9787217FA054700C5FE86 /* Wheres_MileyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wheres_MileyTests.m; sourceTree = "<group>"; };
 		99B9788817FA09C400C5FE86 /* CSE494LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494LevelViewController.h; sourceTree = "<group>"; };
 		99B9788917FA09C400C5FE86 /* CSE494LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494LevelViewController.m; sourceTree = "<group>"; };
 		99B9788B17FA0BD000C5FE86 /* CSE494RulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494RulesViewController.h; sourceTree = "<group>"; };
@@ -94,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				99B9784D17FA054700C5FE86 /* Wheres_Miley */,
-				99B9786C17FA054700C5FE86 /* Wheres_MileyTests */,
 				99B9784617FA054700C5FE86 /* Frameworks */,
 				99B9784517FA054700C5FE86 /* Products */,
 			);
@@ -148,24 +142,6 @@
 				99B9785017FA054700C5FE86 /* InfoPlist.strings */,
 				99B9785317FA054700C5FE86 /* main.m */,
 				99B9785517FA054700C5FE86 /* Wheres_Miley-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		99B9786C17FA054700C5FE86 /* Wheres_MileyTests */ = {
-			isa = PBXGroup;
-			children = (
-				99B9787217FA054700C5FE86 /* Wheres_MileyTests.m */,
-				99B9786D17FA054700C5FE86 /* Supporting Files */,
-			);
-			path = Wheres_MileyTests;
-			sourceTree = "<group>";
-		};
-		99B9786D17FA054700C5FE86 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				99B9786E17FA054700C5FE86 /* Wheres_MileyTests-Info.plist */,
-				99B9786F17FA054700C5FE86 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -258,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99B9787117FA054700C5FE86 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99B9787317FA054700C5FE86 /* Wheres_MileyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +285,6 @@
 				99B9785A17FA054700C5FE86 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		99B9786F17FA054700C5FE86 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99B9787017FA054700C5FE86 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
