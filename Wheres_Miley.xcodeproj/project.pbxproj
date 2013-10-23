@@ -21,7 +21,6 @@
 		99B9786917FA054700C5FE86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784B17FA054700C5FE86 /* UIKit.framework */; };
 		99B9788A17FA09C400C5FE86 /* CSE494LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9788917FA09C400C5FE86 /* CSE494LevelViewController.m */; };
 		99B9788D17FA0BD000C5FE86 /* CSE494RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9788C17FA0BD000C5FE86 /* CSE494RulesViewController.m */; };
-		99B9788F17FA0FBD00C5FE86 /* Miley_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B9788E17FA0FBD00C5FE86 /* Miley_11.jpg */; };
 		99B9789217FA10CA00C5FE86 /* CSE494LandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B9789117FA10CA00C5FE86 /* CSE494LandscapeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 		99B9788917FA09C400C5FE86 /* CSE494LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494LevelViewController.m; sourceTree = "<group>"; };
 		99B9788B17FA0BD000C5FE86 /* CSE494RulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494RulesViewController.h; sourceTree = "<group>"; };
 		99B9788C17FA0BD000C5FE86 /* CSE494RulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494RulesViewController.m; sourceTree = "<group>"; };
-		99B9788E17FA0FBD00C5FE86 /* Miley_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Miley_11.jpg; sourceTree = "<group>"; };
 		99B9789017FA10CA00C5FE86 /* CSE494LandscapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494LandscapeViewController.h; sourceTree = "<group>"; };
 		99B9789117FA10CA00C5FE86 /* CSE494LandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494LandscapeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,7 +135,6 @@
 		99B9784E17FA054700C5FE86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				99B9788E17FA0FBD00C5FE86 /* Miley_11.jpg */,
 				99B9784F17FA054700C5FE86 /* Wheres_Miley-Info.plist */,
 				99B9785017FA054700C5FE86 /* InfoPlist.strings */,
 				99B9785317FA054700C5FE86 /* main.m */,
@@ -223,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99B9788F17FA0FBD00C5FE86 /* Miley_11.jpg in Resources */,
 				99B9786017FA054700C5FE86 /* Images.xcassets in Resources */,
 				99B9785217FA054700C5FE86 /* InfoPlist.strings in Resources */,
 				99B9785B17FA054700C5FE86 /* Main.storyboard in Resources */,
