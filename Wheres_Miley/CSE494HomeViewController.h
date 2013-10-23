@@ -1,5 +1,5 @@
 //
-//  CSE494RulesViewController.h
+//  CSE494HomeViewController.h
 //  Wheres_Miley
 //
 //  Created by Jorden Whicker on 10/23/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CSE494RulesViewController : UIViewController
+@interface CSE494HomeViewController : UIViewController
 
 @end

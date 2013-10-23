@@ -5,19 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>68D0D54D-6145-4C97-99B3-A232D1705AC8</string>
+=======
+	<string>2F338DFB-8450-4C4C-AE21-925D96D88CF3</string>
+>>>>>>> jmwhicke/controllers
 	<key>IDESourceControlProjectName</key>
 	<string>Wheres_Miley</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>A5E589B5-F85D-44DB-BF55-B4A42284486D</key>
+=======
+		<key>5D1A0D14-9CEC-4B90-8E62-1F6C1B377664</key>
+>>>>>>> jmwhicke/controllers
 		<string>https://github.com/jmwhicke/Wheres_Miley.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Wheres_Miley.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>A5E589B5-F85D-44DB-BF55-B4A42284486D</key>
+=======
+		<key>5D1A0D14-9CEC-4B90-8E62-1F6C1B377664</key>
+>>>>>>> jmwhicke/controllers
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +37,22 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
+<<<<<<< HEAD
 	<string>A5E589B5-F85D-44DB-BF55-B4A42284486D</string>
+=======
+	<string>5D1A0D14-9CEC-4B90-8E62-1F6C1B377664</string>
+>>>>>>> jmwhicke/controllers
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>A5E589B5-F85D-44DB-BF55-B4A42284486D</string>
+=======
+			<string>5D1A0D14-9CEC-4B90-8E62-1F6C1B377664</string>
+>>>>>>> jmwhicke/controllers
 			<key>IDESourceControlWCCName</key>
 			<string>Wheres_Miley</string>
 		</dict>

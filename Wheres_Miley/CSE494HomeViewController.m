@@ -1,18 +1,18 @@
 //
-//  CSE494LevelViewController.m
+//  CSE494HomeViewController.m
 //  Wheres_Miley
 //
-//  Created by Jorden Whicker on 9/30/13.
+//  Created by Jorden Whicker on 10/23/13.
 //  Copyright (c) 2013 ASU. All rights reserved.
 //
 
-#import "CSE494LevelViewController.h"
+#import "CSE494HomeViewController.h"
 
-@interface CSE494LevelViewController ()
+@interface CSE494HomeViewController ()
 
 @end
 
-@implementation CSE494LevelViewController
+@implementation CSE494HomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
