@@ -1,18 +1,18 @@
 //
-//  CSE494LandscapeViewController.m
+//  CSE494LevelsViewController.m
 //  Wheres_Miley
 //
 //  Created by Jorden Whicker on 10/23/13.
 //  Copyright (c) 2013 ASU. All rights reserved.
 //
 
-#import "CSE494LandscapeViewController.h"
+#import "CSE494LevelsViewController.h"
 
-@interface CSE494LandscapeViewController ()
+@interface CSE494LevelsViewController ()
 
 @end
 
-@implementation CSE494LandscapeViewController
+@implementation CSE494LevelsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
