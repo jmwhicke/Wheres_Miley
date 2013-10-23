@@ -234,6 +234,7 @@
 			files = (
 				99C2DF4D1818766E0069288C /* Miley_Cyrus_Home.png in Resources */,
 				992D361918185BB000EE1B33 /* MileyLevel1.png in Resources */,
+>>>>>>> jmwhicke/controllers
 				99B9786017FA054700C5FE86 /* Images.xcassets in Resources */,
 				99B9785217FA054700C5FE86 /* InfoPlist.strings in Resources */,
 				99B9785B17FA054700C5FE86 /* Main.storyboard in Resources */,
