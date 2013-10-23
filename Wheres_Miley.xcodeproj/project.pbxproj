@@ -28,6 +28,8 @@
 		99B9786717FA054700C5FE86 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9786617FA054700C5FE86 /* XCTest.framework */; };
 		99B9786817FA054700C5FE86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784717FA054700C5FE86 /* Foundation.framework */; };
 		99B9786917FA054700C5FE86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784B17FA054700C5FE86 /* UIKit.framework */; };
+		99C2DF4D1818766E0069288C /* Miley_Cyrus_Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C2DF4C1818766E0069288C /* Miley_Cyrus_Home.png */; };
+		99C2DF4E1818766E0069288C /* Miley_Cyrus_Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C2DF4C1818766E0069288C /* Miley_Cyrus_Home.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		992D361818185BB000EE1B33 /* MileyLevel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MileyLevel1.png; path = Wheres_Miley/MileyLevel1.png; sourceTree = "<group>"; };
+		992D361818185BB000EE1B33 /* MileyLevel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MileyLevel1.png; sourceTree = "<group>"; };
 		992D361B1818645800EE1B33 /* CSE494HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494HomeViewController.h; sourceTree = "<group>"; };
 		992D361C1818645800EE1B33 /* CSE494HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494HomeViewController.m; sourceTree = "<group>"; };
 		992D361F1818649A00EE1B33 /* CSE494LevelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494LevelsViewController.h; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		99B9785F17FA054700C5FE86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99B9786517FA054700C5FE86 /* Wheres_MileyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wheres_MileyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B9786617FA054700C5FE86 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		99C2DF4C1818766E0069288C /* Miley_Cyrus_Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Miley_Cyrus_Home.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +96,6 @@
 		99B9783B17FA054700C5FE86 = {
 			isa = PBXGroup;
 			children = (
-				992D361818185BB000EE1B33 /* MileyLevel1.png */,
 				99B9784D17FA054700C5FE86 /* Wheres_Miley */,
 				99B9784617FA054700C5FE86 /* Frameworks */,
 				99B9784517FA054700C5FE86 /* Products */,
@@ -143,6 +145,8 @@
 		99B9784E17FA054700C5FE86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				99C2DF4C1818766E0069288C /* Miley_Cyrus_Home.png */,
+				992D361818185BB000EE1B33 /* MileyLevel1.png */,
 				99B9784F17FA054700C5FE86 /* Wheres_Miley-Info.plist */,
 				99B9785017FA054700C5FE86 /* InfoPlist.strings */,
 				99B9785317FA054700C5FE86 /* main.m */,
@@ -228,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C2DF4D1818766E0069288C /* Miley_Cyrus_Home.png in Resources */,
 				992D361918185BB000EE1B33 /* MileyLevel1.png in Resources */,
 				99B9786017FA054700C5FE86 /* Images.xcassets in Resources */,
 				99B9785217FA054700C5FE86 /* InfoPlist.strings in Resources */,
@@ -239,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C2DF4E1818766E0069288C /* Miley_Cyrus_Home.png in Resources */,
 				992D361A18185BB000EE1B33 /* MileyLevel1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
