@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Miley_Cyrus_Home.png" translatesAutoresizingMaskIntoConstraints="NO" id="3cG-M8-PxJ">
-                                <rect key="frame" x="0.0" y="68" width="320" height="354"/>
+                                <rect key="frame" x="0.0" y="62" width="320" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Miley_Cyrus_Home.png" translatesAutoresizingMaskIntoConstraints="NO" id="fEZ-Xt-Rb2">
-                                <rect key="frame" x="0.0" y="65" width="320" height="357"/>
+                                <rect key="frame" x="0.0" y="53" width="320" height="369"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ck-BR-c5O">
