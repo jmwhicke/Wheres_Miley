@@ -3,7 +3,7 @@
 //  Wheres_Miley
 //
 //  Created by Jorden Whicker on 10/23/13.
-//  Copyright (c) 2013 ASU. All rights reserved.
+//  Copyright (c) 2013 ASU. All rights reserved. Test
 //
 
 #import "CSE494RulesViewController.h"
@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor blackColor];
+
 }
 
 - (void)didReceiveMemoryWarning

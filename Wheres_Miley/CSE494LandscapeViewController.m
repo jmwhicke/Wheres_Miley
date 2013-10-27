@@ -8,6 +8,9 @@
 
 #import "CSE494LandscapeViewController.h"
 
+#import "CSE494LevelsViewController.h"
+
+
 @interface CSE494LandscapeViewController ()
 
 @end
@@ -17,7 +20,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -27,6 +31,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor blackColor];
+
 }
 
 - (void)didReceiveMemoryWarning
