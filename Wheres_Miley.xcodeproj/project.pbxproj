@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		24F20AF2181E0FC900CE6586 /* MileyLevel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F20AF0181E0FC900CE6586 /* MileyLevel2.png */; };
 		24F20AF3181E0FC900CE6586 /* MileyLevel3.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F20AF1181E0FC900CE6586 /* MileyLevel3.png */; };
+		24F20AFA181E154D00CE6586 /* appicon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F20AF5181E154D00CE6586 /* appicon2.png */; };
+		24F20AFB181E154D00CE6586 /* appicon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F20AF6181E154D00CE6586 /* appicon3.png */; };
+		24F20AFD181E154D00CE6586 /* launchImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F20AF8181E154D00CE6586 /* launchImage2.png */; };
+		24F20B00181E16E400CE6586 /* appicon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F20AFE181E16E400CE6586 /* appicon1.png */; };
+		24F20B01181E16E400CE6586 /* launchImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F20AFF181E16E400CE6586 /* launchImage1.png */; };
 		992D361918185BB000EE1B33 /* MileyLevel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 992D361818185BB000EE1B33 /* MileyLevel1.png */; };
 		992D361A18185BB000EE1B33 /* MileyLevel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 992D361818185BB000EE1B33 /* MileyLevel1.png */; };
 		992D361D1818645800EE1B33 /* CSE494HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992D361C1818645800EE1B33 /* CSE494HomeViewController.m */; };
@@ -47,6 +52,11 @@
 /* Begin PBXFileReference section */
 		24F20AF0181E0FC900CE6586 /* MileyLevel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MileyLevel2.png; path = ../../../Downloads/MileyLevel2.png; sourceTree = "<group>"; };
 		24F20AF1181E0FC900CE6586 /* MileyLevel3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MileyLevel3.png; path = ../../../Downloads/MileyLevel3.png; sourceTree = "<group>"; };
+		24F20AF5181E154D00CE6586 /* appicon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon2.png; path = ../../Miley_APP_Pictures/appicon2.png; sourceTree = "<group>"; };
+		24F20AF6181E154D00CE6586 /* appicon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon3.png; path = ../../Miley_APP_Pictures/appicon3.png; sourceTree = "<group>"; };
+		24F20AF8181E154D00CE6586 /* launchImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchImage2.png; path = ../../Miley_APP_Pictures/launchImage2.png; sourceTree = "<group>"; };
+		24F20AFE181E16E400CE6586 /* appicon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon1.png; path = ../../Miley_APP_Pictures/appicon1.png; sourceTree = "<group>"; };
+		24F20AFF181E16E400CE6586 /* launchImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchImage1.png; path = ../../Miley_APP_Pictures/launchImage1.png; sourceTree = "<group>"; };
 		992D361818185BB000EE1B33 /* MileyLevel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MileyLevel1.png; sourceTree = "<group>"; };
 		992D361B1818645800EE1B33 /* CSE494HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494HomeViewController.h; sourceTree = "<group>"; };
 		992D361C1818645800EE1B33 /* CSE494HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494HomeViewController.m; sourceTree = "<group>"; };
@@ -149,6 +159,11 @@
 		99B9784E17FA054700C5FE86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24F20AFE181E16E400CE6586 /* appicon1.png */,
+				24F20AF5181E154D00CE6586 /* appicon2.png */,
+				24F20AF6181E154D00CE6586 /* appicon3.png */,
+				24F20AFF181E16E400CE6586 /* launchImage1.png */,
+				24F20AF8181E154D00CE6586 /* launchImage2.png */,
 				99C2DF4C1818766E0069288C /* Miley_Cyrus_Home.png */,
 				992D361818185BB000EE1B33 /* MileyLevel1.png */,
 				24F20AF0181E0FC900CE6586 /* MileyLevel2.png */,
@@ -240,9 +255,14 @@
 			files = (
 				24F20AF2181E0FC900CE6586 /* MileyLevel2.png in Resources */,
 				99C2DF4D1818766E0069288C /* Miley_Cyrus_Home.png in Resources */,
+				24F20AFD181E154D00CE6586 /* launchImage2.png in Resources */,
 				992D361918185BB000EE1B33 /* MileyLevel1.png in Resources */,
+				24F20AFB181E154D00CE6586 /* appicon3.png in Resources */,
 				99B9786017FA054700C5FE86 /* Images.xcassets in Resources */,
+				24F20B01181E16E400CE6586 /* launchImage1.png in Resources */,
 				24F20AF3181E0FC900CE6586 /* MileyLevel3.png in Resources */,
+				24F20AFA181E154D00CE6586 /* appicon2.png in Resources */,
+				24F20B00181E16E400CE6586 /* appicon1.png in Resources */,
 				99B9785217FA054700C5FE86 /* InfoPlist.strings in Resources */,
 				99B9785B17FA054700C5FE86 /* Main.storyboard in Resources */,
 			);
