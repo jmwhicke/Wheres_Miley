@@ -46,18 +46,22 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"level1"]){
-        //[[segue destinationViewController] ];
         UIImage *image = [UIImage imageNamed:@"MileyLevel1.png"];
         [segue.destinationViewController setLevelImage:image];
-        
+        NSString *imageName = @"MileyLevel1.png";
+        [segue.destinationViewController getImageName:imageName];
     }
     else if([[segue identifier] isEqualToString:@"level2"]){
-        
-        
+        UIImage *image = [UIImage imageNamed:@"MileyLevel2.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel2.png";
+        [segue.destinationViewController getImageName:imageName];
     }
     else if([[segue identifier] isEqualToString:@"level3"]){
-        
-        
+        UIImage *image = [UIImage imageNamed:@"MileyLevel3.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel3.png";
+        [segue.destinationViewController getImageName:imageName];
     }
 }
 

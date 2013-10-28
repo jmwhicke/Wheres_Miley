@@ -8,15 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CSE494LandscapeViewController : UIViewController
+@interface CSE494LandscapeViewController : UIViewController<UIAlertViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UIImageView* level;
 
 
 @property (nonatomic, strong) UIImage* levelImage;
-
+@property (nonatomic, strong) NSString* imgName;
 
 
 -(void)setLevelImage:(UIImage*)image;
 
+-(void)getImageName:(NSString*)imageName;
 @end
+
