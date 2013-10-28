@@ -13,9 +13,12 @@
 
 @interface CSE494LandscapeViewController ()
 
+
+
 @end
 
 @implementation CSE494LandscapeViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +36,9 @@
 	// Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor blackColor];
+    
+    [self.level setImage:_levelImage];
+
 
 }
 
@@ -40,6 +46,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)setLevelImage:(UIImage*)image{
+    _levelImage = image;
 }
 
 @end
