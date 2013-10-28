@@ -37,7 +37,7 @@
     
     self.view.backgroundColor = [UIColor blackColor];
     
-    //[self.level setImage:];
+    [self.level setImage:_levelImage];
 
 
 }
@@ -49,7 +49,7 @@
 }
 
 -(void)setLevelImage:(UIImage*)image{
-
+    _levelImage = image;
 }
 
 @end
