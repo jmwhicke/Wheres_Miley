@@ -3,7 +3,7 @@
 //  Wheres_Miley
 //
 //  Created by Jorden Whicker on 10/23/13.
-//  Copyright (c) 2013 ASU. All rights reserved. Test
+//  Copyright (c) 2013 ASU. All rights reserved.
 //
 
 #import "CSE494RulesViewController.h"
