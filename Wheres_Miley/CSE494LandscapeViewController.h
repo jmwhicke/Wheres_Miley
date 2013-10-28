@@ -10,6 +10,13 @@
 
 @interface CSE494LandscapeViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIImageView* level;
 
+
+@property (nonatomic, strong) UIImage* levelImage;
+
+
+
+-(void)setLevelImage:(UIImage*)image;
 
 @end

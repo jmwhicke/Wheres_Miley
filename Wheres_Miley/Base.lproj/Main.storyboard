@@ -167,6 +167,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Where is Miley?" id="jCQ-1B-DkV"/>
+                    <connections>
+                        <outlet property="level" destination="22s-S1-Ot3" id="HEh-g7-3Lf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WsC-fF-dDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

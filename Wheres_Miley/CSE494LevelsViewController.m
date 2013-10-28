@@ -43,6 +43,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"level1"]){
+        //[[segue destinationViewController] ];
+        UIImage *image = [UIImage imageNamed:@"MileyLevel1.png"];
+        [segue.destinationViewController setLevelImage:image];
+        
+    }
+    else if([[segue identifier] isEqualToString:@"level2"]){
+        
+        
+    }
+    else if([[segue identifier] isEqualToString:@"level3"]){
+        
+        
+    }
+}
 
 
 @end
