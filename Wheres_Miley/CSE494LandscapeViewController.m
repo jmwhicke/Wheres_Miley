@@ -52,4 +52,28 @@
     _levelImage = image;
 }
 
+-(void)getImageName:(NSString*)imageName{
+    _imgName = imageName;
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch *touch =[touches anyObject];
+    
+    CGPoint point = [touch locationInView:self.view];
+    
+    if([_imgName  isEqual: @"MileyLevel1.png"]){
+        if(point.x>=86&&point.x<=111&&point.y>=209&&point.y<=225){
+            //ALERT WILL GO HERE
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+    }
+    else if([_imgName  isEqual: @"MileyLevel2.png"]){
+        //points for level2
+    }
+    else if([_imgName  isEqual: @"MileyLevel3.png"]){
+        //points for level3
+    }
+ 
+}
+
 @end
