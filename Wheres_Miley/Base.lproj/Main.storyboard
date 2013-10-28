@@ -89,7 +89,7 @@
         <!--Levels View Controller - Levels-->
         <scene sceneID="RAM-qY-EXX">
             <objects>
-                <viewController title="Levels" id="91K-m0-E1e" customClass="CSE494LevelsViewController" sceneMemberID="viewController">
+                <viewController id="91K-m0-E1e" customClass="CSE494LevelsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bfH-Df-3S6"/>
                         <viewControllerLayoutGuide type="bottom" id="LSP-j3-zIl"/>

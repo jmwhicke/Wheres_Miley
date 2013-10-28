@@ -66,23 +66,49 @@
     if([_imgName isEqualToString:@"MileyLevel1.png"]){
         if(point.x>=86&&point.x<=111&&point.y<=263&&point.y>=243.5){
             //ALERT WILL GO HERE
-            NSLog(@"Test");
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
                                                             message:@"You found Miley!"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"Next Level"
-                                                  otherButtonTitles:nil];
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
             
             [alert show];
+            [alert reloadInputViews];
             
         }
         //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
     }
     else if([_imgName isEqualToString:@"MileyLevel2.png"]){
         //test level 2 points
+        if(point.x>=260&&point.x<=290&&point.y<=225&&point.y>=193.5){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
     }
     else if([_imgName isEqualToString:@"MileyLevel3.png"]){
         //test level 3 points
+        if(point.x>=116&&point.x<=149.5&&point.y<=168.5&&point.y>=149){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
     }
 
 
@@ -90,9 +116,12 @@
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex == 0){
-        
+        [self.navigationController popViewControllerAnimated:YES];
     }
+    
 }
+
+
 
 
 @end

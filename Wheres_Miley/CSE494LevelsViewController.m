@@ -58,8 +58,10 @@
         [segue.destinationViewController getImageName:imageName];
     }
     else if([[segue identifier] isEqualToString:@"level3"]){
-        /*UIImage *image = [UIImage imageNamed:@"MileyLevel3.png"];
-        [segue.destinationViewController setLevelImage:image];*/
+        UIImage *image = [UIImage imageNamed:@"MileyLevel3.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel3.png";
+        [segue.destinationViewController getImageName:imageName];
     }
 }
 
