@@ -60,20 +60,39 @@
     UITouch *touch =[touches anyObject];
     
     CGPoint point = [touch locationInView:self.view];
-    
-    if([_imgName  isEqual: @"MileyLevel1.png"]){
-        if(point.x>=86&&point.x<=111&&point.y>=209&&point.y<=225){
+    /*NSLog(@"X location: %f", point.x);
+    NSLog(@"Y location: %f", point.y);*/
+
+    if([_imgName isEqualToString:@"MileyLevel1.png"]){
+        if(point.x>=86&&point.x<=111&&point.y<=263&&point.y>=243.5){
             //ALERT WILL GO HERE
+            NSLog(@"Test");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"Next Level"
+                                                  otherButtonTitles:nil];
+            
+            [alert show];
+            
         }
         //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
     }
-    else if([_imgName  isEqual: @"MileyLevel2.png"]){
-        //points for level2
+    else if([_imgName isEqualToString:@"MileyLevel2.png"]){
+        //test level 2 points
     }
-    else if([_imgName  isEqual: @"MileyLevel3.png"]){
-        //points for level3
+    else if([_imgName isEqualToString:@"MileyLevel3.png"]){
+        //test level 3 points
     }
- 
+
+
 }
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 0){
+        
+    }
+}
+
 
 @end

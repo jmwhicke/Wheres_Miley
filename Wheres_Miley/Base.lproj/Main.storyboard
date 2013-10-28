@@ -89,7 +89,7 @@
         <!--Levels View Controller - Levels-->
         <scene sceneID="RAM-qY-EXX">
             <objects>
-                <viewController id="91K-m0-E1e" customClass="CSE494LevelsViewController" sceneMemberID="viewController">
+                <viewController title="Levels" id="91K-m0-E1e" customClass="CSE494LevelsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bfH-Df-3S6"/>
                         <viewControllerLayoutGuide type="bottom" id="LSP-j3-zIl"/>
@@ -203,6 +203,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="N0c-HA-2RI"/>
+        <segue reference="bKv-bm-RNL"/>
     </inferredMetricsTieBreakers>
 </document>
