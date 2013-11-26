@@ -10,10 +10,7 @@
 
 #import "CSE494LevelsViewController.h"
 
-
 @interface CSE494LandscapeViewController ()
-
-
 
 @end
 
@@ -41,6 +38,7 @@
 
 
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -71,10 +69,9 @@
                                                            delegate:self
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
-            
+            [self.delegate unlockLevel:2];
             [alert show];
             [alert reloadInputViews];
-            
         }
         //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
     }
@@ -87,7 +84,7 @@
                                                            delegate:self
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
-            
+            [self.delegate unlockLevel:3];
             [alert show];
             [alert reloadInputViews];
             
@@ -103,7 +100,7 @@
                                                            delegate:self
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
-            
+            //UNLOCK LEVEL 4 WILL GO HERE
             [alert show];
             [alert reloadInputViews];
             
@@ -120,6 +117,7 @@
     }
     
 }
+
 
 
 

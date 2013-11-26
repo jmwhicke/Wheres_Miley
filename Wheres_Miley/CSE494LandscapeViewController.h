@@ -6,19 +6,27 @@
 //  Copyright (c) 2013 ASU. All rights reserved. dfsd
 //
 
-#import <UIKit/UIKit.h>
+@protocol MyDataDelegate
 
-@interface CSE494LandscapeViewController : UIViewController<UIAlertViewDelegate>
+-(void)unlockLevel:(int)completionData;
+
+@end
+
+#import <UIKit/UIKit.h>
+#import "CSE494LevelsViewController.h"
+
+@interface CSE494LandscapeViewController : UIViewController <UIAlertViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UIImageView* level;
-
-
 @property (nonatomic, strong) UIImage* levelImage;
 @property (nonatomic, strong) NSString* imgName;
+@property (nonatomic) id<MyDataDelegate> delegate;
 
 
 -(void)setLevelImage:(UIImage*)image;
 
 -(void)getImageName:(NSString*)imageName;
+
 @end
+
 
