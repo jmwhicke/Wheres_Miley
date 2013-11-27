@@ -101,12 +101,133 @@
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
+            [self.delegate unlockLevel:4];
             [alert show];
             [alert reloadInputViews];
             
         }
         //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
     }
+    else if([_imgName isEqualToString:@"MileyLevel4.png"]){
+        //test level 3 points
+        if(point.x>=280.5&&point.x<=292&&point.y<=380&&point.y>=368.5){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            //UNLOCK LEVEL 4 WILL GO HERE
+            [self.delegate unlockLevel:5];
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+    }
+    else if([_imgName isEqualToString:@"MileyLevel5.png"]){
+        //test level 3 points
+        if(point.x>=252.5&&point.x<=268.5&&point.y<=218&&point.y>=208.5){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            //UNLOCK LEVEL 4 WILL GO HERE
+            [self.delegate unlockLevel:6];
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+    }
+    else if([_imgName isEqualToString:@"MileyLevel6.png"]){
+        //test level 3 points
+        if(point.x>=85&&point.x<=97&&point.y<=134.5&&point.y>=118){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            //UNLOCK LEVEL 4 WILL GO HERE
+            [self.delegate unlockLevel:7];
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+    }
+    else if([_imgName isEqualToString:@"MileyLevel7.png"]){
+        //test level 3 points
+        if(point.x>=45&&point.x<=74.5&&point.y<=115.5&&point.y>=99.5){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            //UNLOCK LEVEL 4 WILL GO HERE
+            [self.delegate unlockLevel:8];
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+    }
+    else if([_imgName isEqualToString:@"MileyLevel8.png"]){
+        //test level 3 points
+        if(point.x>=201.5&&point.x<=211.5&&point.y<=135.5&&point.y>=127){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            //UNLOCK LEVEL 4 WILL GO HERE
+            [self.delegate unlockLevel:9];
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+    }
+    else if([_imgName isEqualToString:@"MileyLevel9.png"]){
+        //test level 3 points
+        if(point.x>=277&&point.x<=302&&point.y<=383.5&&point.y>=354){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You found Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            //UNLOCK LEVEL 4 WILL GO HERE
+            [self.delegate unlockLevel:10];
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+    }
+    else if([_imgName isEqualToString:@"MileyLevel10.png"]){
+        //test level 3 points
+        if(point.x>=96.5&&point.x<=106.5&&point.y<=382&&point.y>=374){
+            //ALERT WILL GO HERE
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
+                                                            message:@"You beat Where's Miley!"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Levels",nil];
+            //UNLOCK LEVEL 4 WILL GO HERE
+            //[self.delegate unlockLevel:10];
+            [alert show];
+            [alert reloadInputViews];
+            
+        }
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+    }
+
 
 
 }

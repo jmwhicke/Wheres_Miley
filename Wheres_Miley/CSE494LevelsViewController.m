@@ -31,10 +31,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor blackColor];
-    
     self.level2.enabled = NO;
     self.level3.enabled = NO;
+    self.level3.enabled = NO;
+    self.level4.enabled = NO;
+    self.level5.enabled = NO;
+    self.level6.enabled = NO;
+    self.level7.enabled = NO;
+    self.level8.enabled = NO;
+    self.level9.enabled = NO;
+    self.level10.enabled = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,37 +76,93 @@
         [segue.destinationViewController getImageName:imageName];
     }
     //LEVELS 4-10 PREP HERE
+    else if([[segue identifier] isEqualToString:@"level4"]){
+        UIImage *image = [UIImage imageNamed:@"MileyLevel4.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel4.png";
+        [segue.destinationViewController getImageName:imageName];
+    }
+    else if([[segue identifier] isEqualToString:@"level5"]){
+        UIImage *image = [UIImage imageNamed:@"MileyLevel5.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel5.png";
+        [segue.destinationViewController getImageName:imageName];
+    }
+    else if([[segue identifier] isEqualToString:@"level6"]){
+        UIImage *image = [UIImage imageNamed:@"MileyLevel6.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel6.png";
+        [segue.destinationViewController getImageName:imageName];
+    }
+    else if([[segue identifier] isEqualToString:@"level7"]){
+        UIImage *image = [UIImage imageNamed:@"MileyLevel7.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel7.png";
+        [segue.destinationViewController getImageName:imageName];
+    }
+    else if([[segue identifier] isEqualToString:@"level8"]){
+        UIImage *image = [UIImage imageNamed:@"MileyLevel8.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel8.png";
+        [segue.destinationViewController getImageName:imageName];
+    }
+    else if([[segue identifier] isEqualToString:@"level9"]){
+        UIImage *image = [UIImage imageNamed:@"MileyLevel9.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel9.png";
+        [segue.destinationViewController getImageName:imageName];
+    }
+    else if([[segue identifier] isEqualToString:@"level10"]){
+        UIImage *image = [UIImage imageNamed:@"MileyLevel10.png"];
+        [segue.destinationViewController setLevelImage:image];
+        NSString *imageName = @"MileyLevel10.png";
+        [segue.destinationViewController getImageName:imageName];
+    }
 }
 
 -(void)unlockLevel:(int)completionData{
     if(completionData == 2){
         self.level2.enabled = YES;
-        [self.level2 setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [self.label2 setTextColor:[UIColor greenColor]];
     }
     else if(completionData == 3){
         self.level3.enabled = YES;
-        [self.level3 setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [self.label3 setTextColor:[UIColor greenColor]];
     }
     else if(completionData == 4){
         //UNLOCK
+        self.level4.enabled = YES;
+        [self.label4 setTextColor:[UIColor greenColor]];
     }
     else if(completionData == 5){
         //UNLOCK
+        self.level5.enabled = YES;
+        [self.label5 setTextColor:[UIColor greenColor]];
     }
     else if(completionData == 6){
         //UNLOCK
+        self.level6.enabled = YES;
+        [self.label6 setTextColor:[UIColor greenColor]];
     }
     else if(completionData == 7){
         //UNLOCK
+        self.level7.enabled = YES;
+        [self.label7 setTextColor:[UIColor greenColor]];
     }
     else if(completionData == 8){
         //UNLOCK
+        self.level8.enabled = YES;
+        [self.label8 setTextColor:[UIColor greenColor]];
     }
     else if(completionData == 9){
         //UNLOCK
+        self.level9.enabled = YES;
+        [self.label9 setTextColor:[UIColor greenColor]];
     }
     else if(completionData == 10){
         //UNLOCK
+        self.level10.enabled = YES;
+        [self.label10 setTextColor:[UIColor greenColor]];
     }
 }
 

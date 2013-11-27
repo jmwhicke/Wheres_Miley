@@ -22,5 +22,16 @@
 @property (nonatomic,strong) IBOutlet UIButton* level9;
 @property (nonatomic,strong) IBOutlet UIButton* level10;
 
+@property (nonatomic,strong) IBOutlet UILabel* label2;
+@property (nonatomic,strong) IBOutlet UILabel* label3;
+@property (nonatomic,strong) IBOutlet UILabel* label4;
+@property (nonatomic,strong) IBOutlet UILabel* label5;
+@property (nonatomic,strong) IBOutlet UILabel* label6;
+@property (nonatomic,strong) IBOutlet UILabel* label7;
+@property (nonatomic,strong) IBOutlet UILabel* label8;
+@property (nonatomic,strong) IBOutlet UILabel* label9;
+@property (nonatomic,strong) IBOutlet UILabel* label10;
+
+
 @end
 
