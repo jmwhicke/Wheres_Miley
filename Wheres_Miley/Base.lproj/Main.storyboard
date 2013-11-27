@@ -171,9 +171,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Where is Miley?" id="jCQ-1B-DkV"/>
+                    <navigationItem key="navigationItem" title="Where is Miley?" id="jCQ-1B-DkV">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="jqP-uT-rah">
+                            <view key="customView" contentMode="scaleToFill" id="Lc5-Vr-NFT">
+                                <rect key="frame" x="203" y="2" width="101" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CroppedMiley.png" translatesAutoresizingMaskIntoConstraints="NO" id="cuD-wJ-JeO">
+                                        <rect key="frame" x="0.0" y="0.0" width="33" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CroppedMiley.png" translatesAutoresizingMaskIntoConstraints="NO" id="a91-3p-boa">
+                                        <rect key="frame" x="34" y="0.0" width="33" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CroppedMiley.png" translatesAutoresizingMaskIntoConstraints="NO" id="e82-HM-mYX">
+                                        <rect key="frame" x="68" y="0.0" width="33" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="level" destination="22s-S1-Ot3" id="HEh-g7-3Lf"/>
+                        <outlet property="lifeOne" destination="cuD-wJ-JeO" id="9bi-UK-qwg"/>
+                        <outlet property="lifeThree" destination="e82-HM-mYX" id="DmH-Ba-y5F"/>
+                        <outlet property="lifeTwo" destination="a91-3p-boa" id="kDs-jb-KUw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WsC-fF-dDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,6 +228,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CroppedMiley.png" width="40" height="48"/>
         <image name="Miley_Cyrus_Home.png" width="213" height="238"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

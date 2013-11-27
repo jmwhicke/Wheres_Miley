@@ -21,7 +21,9 @@
 @property (nonatomic, strong) UIImage* levelImage;
 @property (nonatomic, strong) NSString* imgName;
 @property (nonatomic) id<MyDataDelegate> delegate;
-
+@property (weak, nonatomic) IBOutlet UIImageView *lifeOne;
+@property (weak, nonatomic) IBOutlet UIImageView *lifeTwo;
+@property (weak, nonatomic) IBOutlet UIImageView *lifeThree;
 
 -(void)setLevelImage:(UIImage*)image;
 

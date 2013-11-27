@@ -16,6 +16,7 @@
 
 @implementation CSE494LandscapeViewController
 
+    int counter = 2;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,16 +55,22 @@
     _imgName = imageName;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
     UITouch *touch =[touches anyObject];
     
     CGPoint point = [touch locationInView:self.view];
     /*NSLog(@"X location: %f", point.x);
     NSLog(@"Y location: %f", point.y);*/
 
-    if([_imgName isEqualToString:@"MileyLevel1.png"]){
-        if(point.x>=86&&point.x<=111&&point.y<=263&&point.y>=243.5){
+    if([_imgName isEqualToString:@"MileyLevel1.png"])
+    {
+        if(point.x>=86&&point.x<=111&&point.y<=263&&point.y>=243.5)
+        {
+            counter = 2;
+            
             //ALERT WILL GO HERE
+            
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
                                                             message:@"You found Miley!"
                                                            delegate:self
@@ -74,10 +81,40 @@
             [alert reloadInputViews];
         }
         //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+        else
+        {
+            if (counter == 2)
+            {
+                _lifeOne.hidden = YES;
+                counter--;
+            }
+            else if (counter == 1)
+            {
+                _lifeTwo.hidden = YES;
+                counter--;
+            }
+            else
+            {
+                _lifeThree.hidden = YES;
+                counter--;
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Go Home!"
+                                                                message:@"You ran out of lives, try again."
+                                                               delegate:self
+                                                      cancelButtonTitle:nil
+                                                      otherButtonTitles:@"Levels",nil];
+                [alert show];
+                [alert reloadInputViews];
+                counter = 2;
+            }
+            
+        }
     }
     else if([_imgName isEqualToString:@"MileyLevel2.png"]){
         //test level 2 points
-        if(point.x>=260&&point.x<=290&&point.y<=225&&point.y>=193.5){
+        if(point.x>=260&&point.x<=290&&point.y<=225&&point.y>=193.5)
+        {
+            counter = 2;
+
             //ALERT WILL GO HERE
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
                                                             message:@"You found Miley!"
@@ -90,10 +127,40 @@
             
         }
         //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+        else
+        {
+            if (counter == 2)
+            {
+                _lifeOne.hidden = YES;
+                counter--;
+            }
+            else if (counter == 1)
+            {
+                _lifeTwo.hidden = YES;
+                counter--;
+            }
+            else
+            {
+                _lifeThree.hidden = YES;
+                counter--;
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Go Home!"
+                                                                message:@"You ran out of lives, try again."
+                                                               delegate:self
+                                                      cancelButtonTitle:nil
+                                                      otherButtonTitles:@"Levels",nil];
+                [alert show];
+                [alert reloadInputViews];
+                counter = 2;
+            }
+            
+        }
     }
     else if([_imgName isEqualToString:@"MileyLevel3.png"]){
         //test level 3 points
-        if(point.x>=116&&point.x<=149.5&&point.y<=168.5&&point.y>=149){
+        if(point.x>=116&&point.x<=149.5&&point.y<=168.5&&point.y>=149)
+        {
+            counter = 2;
+
             //ALERT WILL GO HERE
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations"
                                                             message:@"You found Miley!"
@@ -106,8 +173,34 @@
             
         }
         //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+        else
+        {
+            if (counter == 2)
+            {
+                _lifeOne.hidden = YES;
+                counter--;
+            }
+            else if (counter == 1)
+            {
+                _lifeTwo.hidden = YES;
+                counter--;
+            }
+            else
+            {
+                _lifeThree.hidden = YES;
+                counter--;
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Go Home!"
+                                                                message:@"You ran out of lives, try again."
+                                                               delegate:self
+                                                      cancelButtonTitle:nil
+                                                      otherButtonTitles:@"Levels",nil];
+                [alert show];
+                [alert reloadInputViews];
+                counter = 2;
+            }
+            
+        }
     }
-
 
 }
 
