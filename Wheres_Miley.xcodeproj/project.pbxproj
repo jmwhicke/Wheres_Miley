@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2400992A184692F3008F1F04 /* CroppedMiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 24009929184692F3008F1F04 /* CroppedMiley.png */; };
 		2400C05B18448B00001E6D06 /* Beach.png in Resources */ = {isa = PBXBuildFile; fileRef = 2400C05A18448B00001E6D06 /* Beach.png */; };
 		2400C05D18448BA1001E6D06 /* Station.png in Resources */ = {isa = PBXBuildFile; fileRef = 2400C05C18448BA1001E6D06 /* Station.png */; };
 		2400C05F18448C28001E6D06 /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 2400C05E18448C28001E6D06 /* 23.png */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24009929184692F3008F1F04 /* CroppedMiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CroppedMiley.png; sourceTree = "<group>"; };
 		2400C05A18448B00001E6D06 /* Beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beach.png; sourceTree = "<group>"; };
 		2400C05C18448BA1001E6D06 /* Station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Station.png; sourceTree = "<group>"; };
 		2400C05E18448C28001E6D06 /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				24F20B02181E1D5200CE6586 /* appicon1.png */,
 				24F20B03181E1D5200CE6586 /* appicon2.png */,
 				24F20B04181E1D5200CE6586 /* appicon3.png */,
+				24009929184692F3008F1F04 /* CroppedMiley.png */,
 				24F20B05181E1D5200CE6586 /* launchImage1.png */,
 				24F20B06181E1D5200CE6586 /* launchImage2.png */,
 				24F20B07181E1D5200CE6586 /* MileyLevel2.png */,
@@ -323,6 +326,7 @@
 				2400C06F18454462001E6D06 /* Castle2.png in Resources */,
 				242A677F1845B00D00C47415 /* MileyLevel4.png in Resources */,
 				24F20B09181E1D5200CE6586 /* appicon1.png in Resources */,
+				2400992A184692F3008F1F04 /* CroppedMiley.png in Resources */,
 				99C2DF4D1818766E0069288C /* Miley_Cyrus_Home.png in Resources */,
 				992D361918185BB000EE1B33 /* MileyLevel1.png in Resources */,
 				242A67871845B18200C47415 /* Simpsons.png in Resources */,

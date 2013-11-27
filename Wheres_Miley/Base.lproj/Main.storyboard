@@ -317,9 +317,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Where is Miley?" id="jCQ-1B-DkV"/>
+                    <navigationItem key="navigationItem" title="Where is Miley?" id="jCQ-1B-DkV">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="SMY-K4-S8F">
+                            <view key="customView" contentMode="scaleToFill" id="JRp-3J-7Fo">
+                                <rect key="frame" x="233" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CroppedMiley.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZCo-iI-0F5">
+                                        <rect key="frame" x="0.0" y="4" width="22" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CroppedMiley.png" translatesAutoresizingMaskIntoConstraints="NO" id="QAm-4v-P1r">
+                                        <rect key="frame" x="24" y="4" width="22" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CroppedMiley.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sa1-uH-MPt">
+                                        <rect key="frame" x="49" y="4" width="22" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="level" destination="22s-S1-Ot3" id="HEh-g7-3Lf"/>
+                        <outlet property="lifeOne" destination="ZCo-iI-0F5" id="hZ8-Xu-NdS"/>
+                        <outlet property="lifeThree" destination="Sa1-uH-MPt" id="WGG-cl-oEN"/>
+                        <outlet property="lifeTwo" destination="QAm-4v-P1r" id="500-E2-Igf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WsC-fF-dDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -349,6 +377,7 @@
         <image name="23.png" width="66" height="61"/>
         <image name="Beach.png" width="66" height="61"/>
         <image name="Castle.png" width="66" height="61"/>
+        <image name="CroppedMiley.png" width="40" height="48"/>
         <image name="Expo.png" width="66" height="61"/>
         <image name="GoldRush.png" width="66" height="61"/>
         <image name="Medieval.png" width="66" height="61"/>
