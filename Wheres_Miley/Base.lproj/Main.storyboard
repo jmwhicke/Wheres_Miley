@@ -69,12 +69,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">After selecting a level, search in the levels landscape for a shrunken-down image below. Keep in mind Miley loves to drop that dun-dun-dun in front of people. Once you find her tap that ass... with your finger. Good luck!</string>
+                                <string key="text">After selecting a level, search in the levels landscape for a shrunken-down image below. Keep in mind Miley loves to drop that dun-dun-dun in front of people. Once you find her tap that ass... with your finger. Be aware you are being timed according to the difficulty of each level. Good luck!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Miley_Cyrus_Home.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-wl-awS">
-                                <rect key="frame" x="0.0" y="174" width="325" height="306"/>
+                                <rect key="frame" x="0.0" y="190" width="325" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>

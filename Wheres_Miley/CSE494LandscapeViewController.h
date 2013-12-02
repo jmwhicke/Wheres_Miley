@@ -24,7 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *lifeOne;
 @property (weak, nonatomic) IBOutlet UIImageView *lifeTwo;
 @property (weak, nonatomic) IBOutlet UIImageView *lifeThree;
-
+@property (nonatomic, retain) NSTimer *myTimer;
 
 -(void)setLevelImage:(UIImage*)image;
 
