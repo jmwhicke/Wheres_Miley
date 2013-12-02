@@ -298,7 +298,7 @@
             </objects>
             <point key="canvasLocation" x="1342" y="-369"/>
         </scene>
-        <!--Landscape View Controller - Where is Miley?-->
+        <!--Landscape View Controller - Find Miley!-->
         <scene sceneID="U7I-XV-IpO">
             <objects>
                 <viewController id="0fJ-Yk-PZy" customClass="CSE494LandscapeViewController" sceneMemberID="viewController">
@@ -317,7 +317,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Where is Miley?" id="jCQ-1B-DkV">
+                    <navigationItem key="navigationItem" title="Find Miley!" id="jCQ-1B-DkV">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="SMY-K4-S8F">
                             <view key="customView" contentMode="scaleToFill" id="JRp-3J-7Fo">
                                 <rect key="frame" x="233" y="5" width="71" height="33"/>
