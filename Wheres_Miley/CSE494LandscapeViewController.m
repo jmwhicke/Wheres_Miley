@@ -16,11 +16,11 @@
 
 @implementation CSE494LandscapeViewController
 
-int counter = 2;                                    // Lives counter for this Landscape instance
+int counter = 2;                                    // counts the # of lives for each level
 
-int countdown = 30;                                 // default timer length
+int countdown = 30;                                 // initialization of timer length
 
-int temp = 30;                                      // used for different timer lengths.
+int temp = 30;                                      // initialization of different levels
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -82,6 +82,7 @@ int temp = 30;                                      // used for different timer 
     if([_imgName isEqualToString:@"MileyLevel1.png"])
     {
         temp = 30;
+        
         if(point.x>=86&&point.x<=111&&point.y<=263&&point.y>=243.5)
         {
             
@@ -139,6 +140,7 @@ int temp = 30;                                      // used for different timer 
     else if([_imgName isEqualToString:@"MileyLevel2.png"])
     {
         temp = 30;
+        
         //test level 2 points
         if(point.x>=260&&point.x<=290&&point.y<=225&&point.y>=193.5){
             counter = 2;
@@ -194,7 +196,8 @@ int temp = 30;                                      // used for different timer 
     }
     else if([_imgName isEqualToString:@"MileyLevel3.png"])
     {
-        temp = 35;
+        temp = 30;
+        
         //test level 3 points
         if(point.x>=116&&point.x<=149.5&&point.y<=168.5&&point.y>=149){
             counter = 2;
@@ -251,7 +254,7 @@ int temp = 30;                                      // used for different timer 
     }
     else if([_imgName isEqualToString:@"MileyLevel4.png"])
     {
-        temp = 45;
+        temp = 30;
         //test level 3 points
         if(point.x>=280.5&&point.x<=292&&point.y<=380&&point.y>=368.5){
             counter = 2;
@@ -308,7 +311,7 @@ int temp = 30;                                      // used for different timer 
     }
     else if([_imgName isEqualToString:@"MileyLevel5.png"])
     {
-        temp = 50;
+        temp = 40;
         //test level 3 points
         if(point.x>=252.5&&point.x<=268.5&&point.y<=218&&point.y>=208.5){
             counter = 2;
@@ -365,7 +368,8 @@ int temp = 30;                                      // used for different timer 
     }
     else if([_imgName isEqualToString:@"MileyLevel6.png"])
     {
-        temp = 50;
+        temp = 45;
+        
         //test level 3 points
         if(point.x>=85&&point.x<=97&&point.y<=134.5&&point.y>=118){
             counter = 2;
@@ -422,7 +426,8 @@ int temp = 30;                                      // used for different timer 
     }
     else if([_imgName isEqualToString:@"MileyLevel7.png"])
     {
-        temp = 60;
+        temp = 45;
+        
         //test level 3 points
         if(point.x>=45&&point.x<=74.5&&point.y<=115.5&&point.y>=99.5){
             counter = 2;
@@ -479,7 +484,8 @@ int temp = 30;                                      // used for different timer 
     }
     else if([_imgName isEqualToString:@"MileyLevel8.png"])
     {
-        temp = 60;
+        temp = 50;
+        
         //test level 3 points
         if(point.x>=201.5&&point.x<=211.5&&point.y<=135.5&&point.y>=127){
             counter = 2;
@@ -536,7 +542,8 @@ int temp = 30;                                      // used for different timer 
     }
     else if([_imgName isEqualToString:@"MileyLevel9.png"])
     {
-        temp = 60;
+        temp = 50;
+        
         //test level 3 points
         if(point.x>=277&&point.x<=302&&point.y<=383.5&&point.y>=354){
             counter = 2;
@@ -593,7 +600,8 @@ int temp = 30;                                      // used for different timer 
     }
     else if([_imgName isEqualToString:@"MileyLevel10.png"])
     {
-        temp = 60;
+        temp = 50;
+        
         //test level 3 points
         if(point.x>=96.5&&point.x<=106.5&&point.y<=382&&point.y>=374){
             counter = 2;
