@@ -16,11 +16,11 @@
 
 @implementation CSE494LandscapeViewController
 
-int counter = 2; //Lives counter for this Landscape instance
+int counter = 2;                                    // Lives counter for this Landscape instance
 
-int countdown = 30;                                              // default timer length
+int countdown = 30;                                 // default timer length
 
-int temp = 30;                                              // used for different timer lengths.
+int temp = 30;                                      // used for different timer lengths.
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,7 +41,17 @@ int temp = 30;                                              // used for differen
     
     [self.level setImage:_levelImage];
     
-    [self startCountdown];                                         // calls the method to begin the counter.
+    [self startCountdown];                           // calls the method to begin the counter.
+    
+    if (counter == 1)
+    {
+        _lifeOne.hidden = YES;
+    }
+    else if (counter == 0)
+    {
+        _lifeOne.hidden = YES;
+        _lifeTwo.hidden = YES;
+    }
     
 }
 
@@ -68,7 +78,6 @@ int temp = 30;                                              // used for differen
     
     //NSLog(@"Y location: %f", point.y);
     //NSLog(@"X location: %f", point.x);
-
 
     if([_imgName isEqualToString:@"MileyLevel1.png"])
     {
@@ -97,12 +106,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -149,12 +162,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -202,12 +219,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -255,12 +276,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -308,12 +333,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -361,12 +390,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -414,12 +447,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -467,12 +504,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -520,12 +561,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -573,12 +618,16 @@ int temp = 30;                                              // used for differen
             {
                 _lifeOne.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else if (counter == 1)
             {
                 _lifeTwo.hidden = YES;
                 counter--;
+                [_myTimer invalidate];
+                _myTimer = nil;
                 [self startCountdown];
             }
             else
@@ -635,11 +684,12 @@ int temp = 30;                                              // used for differen
                                                        delegate:self
                                               cancelButtonTitle:nil
                                               otherButtonTitles:@"Levels",nil];
-        countdown = temp;
-        
         [alert show];
         
         [alert reloadInputViews];
+        
+        
+        
     }
 }
 
