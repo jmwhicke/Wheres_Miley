@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface CSE494HomeViewController : UIViewController
-
-
+{
+    AVAudioPlayer *audioPlayer;
+}
 
 @end

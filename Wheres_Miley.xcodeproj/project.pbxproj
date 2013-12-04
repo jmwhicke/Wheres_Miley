@@ -46,6 +46,8 @@
 		992D36291818651A00EE1B33 /* CSE494RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992D36281818651A00EE1B33 /* CSE494RulesViewController.m */; };
 		992D362A1818651A00EE1B33 /* CSE494RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992D36281818651A00EE1B33 /* CSE494RulesViewController.m */; };
 		994F3FA1184EEC7300751B61 /* preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 994F3FA0184EEC7300751B61 /* preview.png */; };
+		994F3FA3184EF6AC00751B61 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994F3FA2184EF6AC00751B61 /* AVFoundation.framework */; };
+		994F3FA5184EF75100751B61 /* wreckingBall.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 994F3FA4184EF75100751B61 /* wreckingBall.m4a */; };
 		99B9784817FA054700C5FE86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784717FA054700C5FE86 /* Foundation.framework */; };
 		99B9784A17FA054700C5FE86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784917FA054700C5FE86 /* CoreGraphics.framework */; };
 		99B9784C17FA054700C5FE86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784B17FA054700C5FE86 /* UIKit.framework */; };
@@ -110,6 +112,8 @@
 		992D36271818651A00EE1B33 /* CSE494RulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494RulesViewController.h; sourceTree = "<group>"; };
 		992D36281818651A00EE1B33 /* CSE494RulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494RulesViewController.m; sourceTree = "<group>"; };
 		994F3FA0184EEC7300751B61 /* preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview.png; sourceTree = "<group>"; };
+		994F3FA2184EF6AC00751B61 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		994F3FA4184EF75100751B61 /* wreckingBall.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wreckingBall.m4a; sourceTree = "<group>"; };
 		99B9784417FA054700C5FE86 /* Wheres_Miley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheres_Miley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B9784717FA054700C5FE86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99B9784917FA054700C5FE86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				994F3FA3184EF6AC00751B61 /* AVFoundation.framework in Frameworks */,
 				99B9784A17FA054700C5FE86 /* CoreGraphics.framework in Frameworks */,
 				99B9784C17FA054700C5FE86 /* UIKit.framework in Frameworks */,
 				99B9784817FA054700C5FE86 /* Foundation.framework in Frameworks */,
@@ -172,6 +177,7 @@
 		99B9784617FA054700C5FE86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				994F3FA2184EF6AC00751B61 /* AVFoundation.framework */,
 				99B9784717FA054700C5FE86 /* Foundation.framework */,
 				99B9784917FA054700C5FE86 /* CoreGraphics.framework */,
 				99B9784B17FA054700C5FE86 /* UIKit.framework */,
@@ -203,6 +209,7 @@
 		99B9784E17FA054700C5FE86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				994F3FA4184EF75100751B61 /* wreckingBall.m4a */,
 				994F3FA0184EEC7300751B61 /* preview.png */,
 				2400C060184543E0001E6D06 /* Castle.png */,
 				242A67861845B18200C47415 /* Simpsons.png */,
@@ -340,6 +347,7 @@
 				242A67801845B00D00C47415 /* MileyLevel5.png in Resources */,
 				242A67841845B00D00C47415 /* MileyLevel9.png in Resources */,
 				2400C06A184543E0001E6D06 /* Medieval.png in Resources */,
+				994F3FA5184EF75100751B61 /* wreckingBall.m4a in Resources */,
 				99B9786017FA054700C5FE86 /* Images.xcassets in Resources */,
 				242A67821845B00D00C47415 /* MileyLevel7.png in Resources */,
 				2400C067184543E0001E6D06 /* Castle.png in Resources */,

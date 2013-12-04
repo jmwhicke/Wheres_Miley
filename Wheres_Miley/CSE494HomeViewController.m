@@ -26,11 +26,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	self.view.backgroundColor = [UIColor blackColor];
     
-    self.view.backgroundColor = [UIColor blackColor];
-
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // Audio Play
+    
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/wreckingBall.m4a", [[NSBundle mainBundle] resourcePath]]];
+    
+    NSError *error;
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    audioPlayer.numberOfLoops = -1;
+    audioPlayer.volume = 0.5;
+    if (audioPlayer == nil)
+        NSLog([error description]);
+    else
+        [audioPlayer play];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [audioPlayer stop];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
