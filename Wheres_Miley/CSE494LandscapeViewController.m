@@ -34,6 +34,8 @@ int temp = 30;                                      // initialization of differe
 
 - (void)viewDidLoad
 {
+    [self quitTimer];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
@@ -100,7 +102,7 @@ int temp = 30;                                      // initialization of differe
             _myTimer = nil;
             
         }
-        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES')
         else
         {
             if (counter == 2)
@@ -254,7 +256,7 @@ int temp = 30;                                      // initialization of differe
     }
     else if([_imgName isEqualToString:@"MileyLevel4.png"])
     {
-        temp = 30;
+        temp = 60;
         //test level 3 points
         if(point.x>=280.5&&point.x<=292&&point.y<=380&&point.y>=368.5){
             counter = 2;
@@ -311,7 +313,7 @@ int temp = 30;                                      // initialization of differe
     }
     else if([_imgName isEqualToString:@"MileyLevel5.png"])
     {
-        temp = 40;
+        temp = 60;
         //test level 3 points
         if(point.x>=252.5&&point.x<=268.5&&point.y<=218&&point.y>=208.5){
             counter = 2;
@@ -368,7 +370,7 @@ int temp = 30;                                      // initialization of differe
     }
     else if([_imgName isEqualToString:@"MileyLevel6.png"])
     {
-        temp = 45;
+        temp = 60;
         
         //test level 3 points
         if(point.x>=85&&point.x<=97&&point.y<=134.5&&point.y>=118){
@@ -699,6 +701,12 @@ int temp = 30;                                      // initialization of differe
         
         
     }
+}
+
+- (void)quitTimer
+{
+    [_myTimer invalidate];
+    _myTimer = nil;
 }
 
 @end
