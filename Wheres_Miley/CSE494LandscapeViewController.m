@@ -34,7 +34,6 @@ int temp = 30;                                      // initialization of differe
 
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
@@ -56,10 +55,9 @@ int temp = 30;                                      // initialization of differe
     
 }
 
--(void)viewWillDisappear:(BOOL)animated
-{
+-(void)viewWillDisappear:(BOOL)animated{
     [_myTimer invalidate];
-    _myTimer = nil;
+    _myTimer=nil;
 }
 
 
@@ -79,16 +77,18 @@ int temp = 30;                                      // initialization of differe
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    int compData=0;
     UITouch *touch =[touches anyObject];
     
     CGPoint point = [touch locationInView:self.view];
     
     //NSLog(@"Y location: %f", point.y);
     //NSLog(@"X location: %f", point.x);
-
+    
     if([_imgName isEqualToString:@"MileyLevel1.png"])
     {
         temp = 30;
+        
         
         if(point.x>=86&&point.x<=111&&point.y<=263&&point.y>=243.5)
         {
@@ -100,14 +100,14 @@ int temp = 30;                                      // initialization of differe
                                                            delegate:self
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
-            [self.delegate unlockLevel:2];
+            compData=2;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
             _myTimer = nil;
             
         }
-        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES')
+        //ELSE (THIS IS WHERE WE WILL WORK WITH 'LIVES'
         else
         {
             if (counter == 2)
@@ -157,7 +157,7 @@ int temp = 30;                                      // initialization of differe
                                                            delegate:self
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
-            [self.delegate unlockLevel:3];
+            compData=3;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -215,7 +215,7 @@ int temp = 30;                                      // initialization of differe
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
-            [self.delegate unlockLevel:4];
+            compData=4;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -261,7 +261,7 @@ int temp = 30;                                      // initialization of differe
     }
     else if([_imgName isEqualToString:@"MileyLevel4.png"])
     {
-        temp = 60;
+        temp = 30;
         //test level 3 points
         if(point.x>=280.5&&point.x<=292&&point.y<=380&&point.y>=368.5){
             counter = 2;
@@ -272,7 +272,7 @@ int temp = 30;                                      // initialization of differe
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
-            [self.delegate unlockLevel:5];
+            compData=5;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -318,7 +318,7 @@ int temp = 30;                                      // initialization of differe
     }
     else if([_imgName isEqualToString:@"MileyLevel5.png"])
     {
-        temp = 60;
+        temp = 40;
         //test level 3 points
         if(point.x>=252.5&&point.x<=268.5&&point.y<=218&&point.y>=208.5){
             counter = 2;
@@ -329,7 +329,7 @@ int temp = 30;                                      // initialization of differe
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
-            [self.delegate unlockLevel:6];
+            compData=6;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -375,7 +375,7 @@ int temp = 30;                                      // initialization of differe
     }
     else if([_imgName isEqualToString:@"MileyLevel6.png"])
     {
-        temp = 60;
+        temp = 45;
         
         //test level 3 points
         if(point.x>=85&&point.x<=97&&point.y<=134.5&&point.y>=118){
@@ -387,7 +387,7 @@ int temp = 30;                                      // initialization of differe
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
-            [self.delegate unlockLevel:7];
+            compData=7;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -445,7 +445,7 @@ int temp = 30;                                      // initialization of differe
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
-            [self.delegate unlockLevel:8];
+            compData=8;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -503,7 +503,7 @@ int temp = 30;                                      // initialization of differe
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
-            [self.delegate unlockLevel:9];
+            compData=9;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -561,7 +561,7 @@ int temp = 30;                                      // initialization of differe
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
-            [self.delegate unlockLevel:10];
+            compData=10;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -619,7 +619,7 @@ int temp = 30;                                      // initialization of differe
                                                   cancelButtonTitle:nil
                                                   otherButtonTitles:@"Levels",nil];
             //UNLOCK LEVEL 4 WILL GO HERE
-            //[self.delegate unlockLevel:10];
+            compData=11;
             [alert show];
             [alert reloadInputViews];
             [_myTimer invalidate];
@@ -663,9 +663,10 @@ int temp = 30;                                      // initialization of differe
             
         }
     }
-
-
-
+    
+    [self saveCompletionData:compData];
+    
+    
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -687,7 +688,6 @@ int temp = 30;                                      // initialization of differe
                                                repeats:YES];
 }
 
-
 - (void)countdownTimer:(NSTimer *)timer
 {
     countdown--;
@@ -707,6 +707,23 @@ int temp = 30;                                      // initialization of differe
         
         
     }
+}
+
+
+-(NSString *)documentsDirectory{
+    return [@"~Documents" stringByExpandingTildeInPath];
+}
+
+-(NSString *)dataFilePath{
+    return [[self documentsDirectory] stringByAppendingPathComponent:@"LevelList.plist"];
+}
+
+-(void)saveCompletionData:(int)compData{
+    NSMutableData *data = [[NSMutableData alloc] init];
+    [data appendBytes:&compData length:sizeof(compData)];
+    NSLog(@"Save:%d\n", compData);
+    
+    [data writeToFile:[self dataFilePath] atomically:YES];
 }
 
 @end

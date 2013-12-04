@@ -45,6 +45,7 @@
 		992D3626181864E200EE1B33 /* CSE494LandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992D3624181864E200EE1B33 /* CSE494LandscapeViewController.m */; };
 		992D36291818651A00EE1B33 /* CSE494RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992D36281818651A00EE1B33 /* CSE494RulesViewController.m */; };
 		992D362A1818651A00EE1B33 /* CSE494RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992D36281818651A00EE1B33 /* CSE494RulesViewController.m */; };
+		994F3FA1184EEC7300751B61 /* preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 994F3FA0184EEC7300751B61 /* preview.png */; };
 		99B9784817FA054700C5FE86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784717FA054700C5FE86 /* Foundation.framework */; };
 		99B9784A17FA054700C5FE86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784917FA054700C5FE86 /* CoreGraphics.framework */; };
 		99B9784C17FA054700C5FE86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B9784B17FA054700C5FE86 /* UIKit.framework */; };
@@ -108,6 +109,7 @@
 		992D3624181864E200EE1B33 /* CSE494LandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494LandscapeViewController.m; sourceTree = "<group>"; };
 		992D36271818651A00EE1B33 /* CSE494RulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSE494RulesViewController.h; sourceTree = "<group>"; };
 		992D36281818651A00EE1B33 /* CSE494RulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSE494RulesViewController.m; sourceTree = "<group>"; };
+		994F3FA0184EEC7300751B61 /* preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview.png; sourceTree = "<group>"; };
 		99B9784417FA054700C5FE86 /* Wheres_Miley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheres_Miley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B9784717FA054700C5FE86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99B9784917FA054700C5FE86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -201,6 +203,7 @@
 		99B9784E17FA054700C5FE86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				994F3FA0184EEC7300751B61 /* preview.png */,
 				2400C060184543E0001E6D06 /* Castle.png */,
 				242A67861845B18200C47415 /* Simpsons.png */,
 				242A67881845B20B00C47415 /* TrailorTrash.png */,
@@ -324,6 +327,7 @@
 				24F20B0E181E1D5200CE6586 /* MileyLevel2.png in Resources */,
 				24F20B0C181E1D5200CE6586 /* launchImage1.png in Resources */,
 				2400C06F18454462001E6D06 /* Castle2.png in Resources */,
+				994F3FA1184EEC7300751B61 /* preview.png in Resources */,
 				242A677F1845B00D00C47415 /* MileyLevel4.png in Resources */,
 				24F20B09181E1D5200CE6586 /* appicon1.png in Resources */,
 				2400992A184692F3008F1F04 /* CroppedMiley.png in Resources */,

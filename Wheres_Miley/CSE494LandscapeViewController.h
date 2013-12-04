@@ -32,5 +32,3 @@
 -(void)getImageName:(NSString*)imageName;
 
 @end
-
-

@@ -16,6 +16,7 @@
 
 @implementation CSE494LevelsViewController
 
+NSMutableArray *levels;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,10 +29,7 @@
 
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    
     self.level2.enabled = NO;
     self.level3.enabled = NO;
     self.level3.enabled = NO;
@@ -42,6 +40,18 @@
     self.level8.enabled = NO;
     self.level9.enabled = NO;
     self.level10.enabled = NO;
+    
+    
+	
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // Do any additional setup after loading the view.
+    int value = [self loadCompletionData];
+    [self unlockLevel:value];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,7 +86,7 @@
         NSString *imageName = @"MileyLevel3.png";
         [segue.destinationViewController getImageName:imageName];
     }
-    //LEVELS 4-10 PREP HERE
+    
     else if([[segue identifier] isEqualToString:@"level4"]){
         UIImage *image = [UIImage imageNamed:@"MileyLevel4.png"];
         [segue.destinationViewController setLevelImage:image];
@@ -122,49 +132,80 @@
 }
 
 -(void)unlockLevel:(int)completionData{
-    if(completionData == 2){
+    
+    if(completionData >= 2){
         self.level2.enabled = YES;
         [self.label2 setTextColor:[UIColor greenColor]];
     }
-    else if(completionData == 3){
+    if(completionData >= 3){
         self.level3.enabled = YES;
         [self.label3 setTextColor:[UIColor greenColor]];
     }
-    else if(completionData == 4){
+    if(completionData >= 4){
         //UNLOCK
         self.level4.enabled = YES;
         [self.label4 setTextColor:[UIColor greenColor]];
     }
-    else if(completionData == 5){
+    if(completionData >= 5){
         //UNLOCK
         self.level5.enabled = YES;
         [self.label5 setTextColor:[UIColor greenColor]];
     }
-    else if(completionData == 6){
+    if(completionData >= 6){
         //UNLOCK
         self.level6.enabled = YES;
         [self.label6 setTextColor:[UIColor greenColor]];
     }
-    else if(completionData == 7){
+    if(completionData >= 7){
         //UNLOCK
         self.level7.enabled = YES;
         [self.label7 setTextColor:[UIColor greenColor]];
     }
-    else if(completionData == 8){
+    if(completionData >= 8){
         //UNLOCK
         self.level8.enabled = YES;
         [self.label8 setTextColor:[UIColor greenColor]];
     }
-    else if(completionData == 9){
+    if(completionData >= 9){
         //UNLOCK
         self.level9.enabled = YES;
         [self.label9 setTextColor:[UIColor greenColor]];
     }
-    else if(completionData == 10){
+    if(completionData >= 10){
         //UNLOCK
         self.level10.enabled = YES;
         [self.label10 setTextColor:[UIColor greenColor]];
     }
+    
 }
+
+/***********SAVE/LOAD STATE OF LEVELS****************/
+
+-(NSString *)documentsDirectory{
+    return [@"~Documents" stringByExpandingTildeInPath];
+}
+
+-(NSString *)dataFilePath{
+    return [[self documentsDirectory] stringByAppendingPathComponent:@"LevelList.plist"];
+}
+
+
+
+-(int)loadCompletionData{
+    NSString *path = [self dataFilePath];
+    int value;
+    if([[NSFileManager defaultManager] fileExistsAtPath:path]){
+        NSData * data = [[ NSData alloc ] initWithContentsOfFile : path ];
+        [data getBytes: &value];
+        NSLog(@"Load%d\n", value);
+        return value;
+    }
+    
+    return 1;
+    
+}
+
+
+
 
 @end

@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVI-rR-rCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="816" y="-369"/>
+            <point key="canvasLocation" x="793" y="-369"/>
         </scene>
         <!--Rules View Controller - How To Play-->
         <scene sceneID="BZJ-GO-gpg">
