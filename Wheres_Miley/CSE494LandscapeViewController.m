@@ -34,7 +34,6 @@ int temp = 30;                                      // initialization of differe
 
 - (void)viewDidLoad
 {
-    [self quitTimer];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -55,6 +54,12 @@ int temp = 30;                                      // initialization of differe
         _lifeTwo.hidden = YES;
     }
     
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [_myTimer invalidate];
+    _myTimer = nil;
 }
 
 
@@ -682,6 +687,7 @@ int temp = 30;                                      // initialization of differe
                                                repeats:YES];
 }
 
+
 - (void)countdownTimer:(NSTimer *)timer
 {
     countdown--;
@@ -701,12 +707,6 @@ int temp = 30;                                      // initialization of differe
         
         
     }
-}
-
-- (void)quitTimer
-{
-    [_myTimer invalidate];
-    _myTimer = nil;
 }
 
 @end

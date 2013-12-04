@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "CSE494LandscapeViewController.h"
 
 @interface CSE494LevelsViewController : UIViewController <MyDataDelegate>
@@ -31,7 +32,6 @@
 @property (nonatomic,strong) IBOutlet UILabel* label8;
 @property (nonatomic,strong) IBOutlet UILabel* label9;
 @property (nonatomic,strong) IBOutlet UILabel* label10;
-
 
 @end
 
