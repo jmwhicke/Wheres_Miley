@@ -57,7 +57,7 @@ int temp = 30;                                      // initialization of differe
 
 -(void)viewWillDisappear:(BOOL)animated{
     [_myTimer invalidate];
-    _myTimer=nil;
+    _myTimer = nil;
 }
 
 
@@ -681,6 +681,8 @@ int temp = 30;                                      // initialization of differe
 {
     countdown = temp;
     
+    [self updateLabel];
+    
     _myTimer = [NSTimer scheduledTimerWithTimeInterval:1
                                                 target:self
                                               selector:@selector(countdownTimer:)
@@ -691,6 +693,9 @@ int temp = 30;                                      // initialization of differe
 - (void)countdownTimer:(NSTimer *)timer
 {
     countdown--;
+    
+    [self updateLabel];
+    
     if (countdown <= 0)
     {
         [timer invalidate];
@@ -703,8 +708,6 @@ int temp = 30;                                      // initialization of differe
         [alert show];
         
         [alert reloadInputViews];
-        
-        
         
     }
 }
@@ -724,6 +727,11 @@ int temp = 30;                                      // initialization of differe
     NSLog(@"Save:%d\n", compData);
     
     [data writeToFile:[self dataFilePath] atomically:YES];
+}
+
+-(void)updateLabel
+{
+    _timerLabel.text = [[NSNumber numberWithUnsignedInt: countdown] stringValue];
 }
 
 @end

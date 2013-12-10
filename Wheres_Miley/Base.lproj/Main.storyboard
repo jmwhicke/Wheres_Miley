@@ -128,7 +128,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFR-JE-Lo8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFR-JE-Lo8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -362,7 +362,7 @@
             </objects>
             <point key="canvasLocation" x="1342" y="-369"/>
         </scene>
-        <!--Landscape View Controller - Find Miley!-->
+        <!--Landscape View Controller-->
         <scene sceneID="U7I-XV-IpO">
             <objects>
                 <viewController id="0fJ-Yk-PZy" customClass="CSE494LandscapeViewController" sceneMemberID="viewController">
@@ -381,7 +381,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Find Miley!" id="jCQ-1B-DkV">
+                    <navigationItem key="navigationItem" id="jCQ-1B-DkV">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="Ace-gr-5cf">
+                            <rect key="frame" x="96" y="6" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNE-LG-wgn">
+                                    <rect key="frame" x="0.0" y="0.0" width="44" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="seconds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLR-g5-QO5">
+                                    <rect key="frame" x="37" y="6" width="76" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="SMY-K4-S8F">
                             <view key="customView" contentMode="scaleToFill" id="JRp-3J-7Fo">
                                 <rect key="frame" x="233" y="5" width="71" height="33"/>
@@ -412,6 +432,7 @@
                         <outlet property="lifeOne" destination="ZCo-iI-0F5" id="hZ8-Xu-NdS"/>
                         <outlet property="lifeThree" destination="Sa1-uH-MPt" id="WGG-cl-oEN"/>
                         <outlet property="lifeTwo" destination="QAm-4v-P1r" id="500-E2-Igf"/>
+                        <outlet property="timerLabel" destination="iNE-LG-wgn" id="Qxq-hQ-mcc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WsC-fF-dDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
